@@ -1,0 +1,2 @@
+# OfflineTaskManager
+Offline task manager.
