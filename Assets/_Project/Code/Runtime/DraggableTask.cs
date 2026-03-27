@@ -4,6 +4,7 @@ using UnityEngine.EventSystems;
 [RequireComponent(typeof(CanvasGroup))]
 public class DraggableTask : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
+    [HideInInspector] public AppTask TaskData;
     [HideInInspector] public Transform OriginalParent;
     private CanvasGroup _canvasGroup;
 

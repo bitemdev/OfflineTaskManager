@@ -19,6 +19,9 @@ public class DropZone : MonoBehaviour, IDropHandler
                 
                 // Update the original parent so it doesn't snap back to the old column
                 draggedTask.OriginalParent = _contentContainer;
+                
+                draggedTask.TaskData.Status = _columnStatus;
+                AppManager.Instance.SaveData();
 
                 Debug.Log($"Task moved to {_columnStatus}!");
             }

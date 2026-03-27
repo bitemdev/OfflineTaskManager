@@ -2692,6 +2692,62 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+--- !u!1 &1366827417
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1366827419}
+  - component: {fileID: 1366827418}
+  m_Layer: 0
+  m_Name: AppManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1366827418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366827417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4168c270da87ab44e9762431c8c7e7c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Project.Runtime::AppManager
+  AppData:
+    Projects: []
+  CurrentProject:
+    ID: 
+    ProjectName: 
+    Tasks: []
+  _projectListContainer: {fileID: 154859551}
+  _todoContainer: {fileID: 1842676590}
+  _inProgressContainer: {fileID: 48215778}
+  _doneContainer: {fileID: 94009736}
+  _projectButtonPrefab: {fileID: 1226351486034404217, guid: b2bc04fd04944a64690caeafb0300eab, type: 3}
+  _taskCardPrefab: {fileID: 8513877925013605815, guid: 4ebd5c7c8ae5ac7449f7b385f243deb4, type: 3}
+--- !u!4 &1366827419
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366827417}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 695.8664, y: 616.2518, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1416026851
 GameObject:
   m_ObjectHideFlags: 0
@@ -4063,7 +4119,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1712809111}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1366827418}
+        m_TargetAssemblyTypeName: AppManager, Project.Runtime
+        m_MethodName: CreateNewProject
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: New Project
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1712809111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4312,6 +4380,7 @@ CanvasRenderer:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 1366827419}
   - {fileID: 1261727663}
   - {fileID: 185034752}
   - {fileID: 915809690}

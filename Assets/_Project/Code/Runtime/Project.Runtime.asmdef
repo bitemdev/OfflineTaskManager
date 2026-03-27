@@ -3,7 +3,8 @@
     "rootNamespace": "BitemDev",
     "references": [
         "Unity.InputSystem",
-        "Unity.RenderPipelines.Universal.Runtime"
+        "Unity.RenderPipelines.Universal.Runtime",
+        "Unity.TextMeshPro"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
