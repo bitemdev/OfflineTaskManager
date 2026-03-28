@@ -1,34 +1,31 @@
-# 📋 OfflineTaskManager
+# OfflineTaskManager
 
-A clean, lightweight, and fully offline Kanban-style task management application built for desktop. 
+Offline Kanban-style task manager for desktop. No cloud, no accounts, no tracking. Data stays on your machine in a local JSON file.
 
-Manage your projects, drag and drop tasks, and keep your data completely private. Everything is saved locally to your machine—no cloud tracking, no accounts required.
+## Features
 
-## ✨ Features
-* **Completely Offline:** Your data never leaves your computer.
-* **Drag-and-Drop Kanban Board:** Effortlessly move tasks between To Do, In Progress, and Done.
-* **Multiple Projects:** Create and seamlessly switch between different project boards.
-* **Persistent Local Storage:** Instantly saves your progress to a local, readable JSON file.
-* **Aesthetic UI:** A clean, distraction-free interface.
+- Kanban board with drag-and-drop (To Do, In Progress, Done)
+- Multiple projects with separate boards
+- Data persisted to a local JSON file
+- No internet connection required
 
-## 🚀 How to Install and Run
+## Install
 
-You don't need Unity or any special software to use this app!
+1. Download the latest `.zip` from [Releases](../../releases).
+2. Extract anywhere.
+3. Run `OfflineTaskManager.exe`.
 
-1. Go to the [Releases](../../releases) page on the right side of this repository.
-2. Download the latest `.zip` file (e.g., `OfflineTaskManager_v1.0_Windows.zip`).
-3. Extract the `.zip` folder anywhere on your computer.
-4. Open the extracted folder and double-click `OfflineTaskManager.exe` to start!
+Don't move the `.exe` out of the extracted folder — it needs the accompanying data files.
 
-*Note: Do not move the `.exe` file out of its folder. It needs the accompanying data files to run properly.*
+## Building from Source
 
-## 🛠️ For Developers (Building from Source)
-If you want to edit the code or see how it works:
-1. Clone this repository to your machine.
-2. Open the project using **Unity 6000.3.6f1**.
-3. Open the main scene located in `Assets/Scenes/`.
-4. Hit Play! 
+1. Clone this repo.
+2. Open in **Unity 6000.3.6f1**.
+3. Open the main scene in `Assets/Scenes/`.
+4. Hit Play.
 
-## 📂 Where is my data saved?
-Your tasks and projects are safely stored in a `TaskManager_saveData.json` file on your OS-level local app data folder:
-* **Windows:** `%userprofile%\AppData\LocalLow\bitemdev\OfflineTaskManager\`
+## Data Location
+
+Tasks are saved to `TaskManager_saveData.json` in your local app data folder:
+
+- **Windows:** `%userprofile%\AppData\LocalLow\bitemdev\OfflineTaskManager\`
